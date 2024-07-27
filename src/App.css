@@ -1,0 +1,51 @@
+#root {
+	width: 75%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.toolbar {
+  display: flex;
+  gap: 10px;
+	justify-content: center;
+}
+
+.filter-button {
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: 2px solid #585858;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-button.selected {
+  background-color: #585858;
+  color: white;
+}
+
+.filter-button.unselected {
+  background-color: rgb(255, 252, 252);
+  color: #585858;
+}
+
+.filter-button:hover {
+  transform: scale(1.1);
+}
+
+.projects {
+  padding-top: 30px;
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+	justify-content: center;
+  margin: 0 auto;
+}
+
+.project {
+  width: calc(33% - 10px);
+  margin-bottom: 10px;
+  object-fit: cover;
+}
